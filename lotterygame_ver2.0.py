@@ -13,7 +13,7 @@ if a == "yes":
             print(letter, end="", flush=True)
             time.sleep(0.5)
         print()
-        x = input("guess the number: ")
+        x = int(input("guess the number: "))
         print("the lucky number is: ", randnum)
         if randnum == x:
             print("You won!!")
