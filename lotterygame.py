@@ -11,7 +11,7 @@ if a == "yes":
         randlist = ran.randint(1, 50)
         for letter in ["randomizing", ".", ".", ".", ".", "."]:
             print(letter, end="", flush=True)
-            time.sleep(2)
+            time.sleep(0.5)
         print()
         print("the number you got is:", randlist)
         if randlist == 38:
@@ -19,5 +19,4 @@ if a == "yes":
             break
         else:
             print("you lost, try again.")
-            break
 
