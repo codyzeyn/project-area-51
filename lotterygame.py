@@ -19,4 +19,6 @@ if a == "yes":
             break
         else:
             print("you lost, try again.")
-
+            x = input("press enter to try again... otherwise type something --> ")
+            if x != "":
+                break
