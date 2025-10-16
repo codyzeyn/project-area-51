@@ -1,0 +1,53 @@
+import time
+import random
+
+n = ["rock", "paper", "scissors"]
+bot = random.choice(n)
+
+for letter in ["bot ", "vs ", "human ", "game"]:
+    print(letter, end="", flush=True)
+    time.sleep(0.3)
+print()
+
+w = input("are you ready? yes/no --> ")
+if w == "yes":
+    a = input("create username first: ")
+    b = input("create password: ")
+    print("Account created")
+    time.sleep(3)
+    print("now log in your created account below")
+
+    c = input("username: ")
+    d = input("password: ")
+
+    while True:
+        if c == a and d == b:
+            print("battle against the bot")
+            print("")
+            print("[Available weapon: rock, paper, scissors ]")
+
+            e = input("what's your weapon: ").lower()
+            print("bot:", bot)
+
+            if e == "rock" and bot == "scissors":
+                print("player wins")
+            elif e == "scissors" and bot == "rock":
+                print("bot wins")
+            elif e == "rock" and bot == "paper":
+                print("bot wins")
+            elif e == "paper" and bot == "rock":
+                print("player wins")
+            elif e == "scissors" and bot == "paper":
+                print("player wins")
+            elif e == "paper" and bot == "scissors":
+                print("bot wins")
+            else:
+                print("invalid weapon")
+
+            z = input("press enter to continue.. otherwise it will exit")
+            if z != "":
+                break
+
+        elif c != a or d != b:
+            print("wrong password or username")
+            break
