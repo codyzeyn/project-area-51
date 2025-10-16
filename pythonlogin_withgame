@@ -42,7 +42,7 @@ if w == "yes":
             elif e == "paper" and bot == "scissors":
                 print("bot wins")
             else:
-                print("invalid weapon")
+                print("draw")
 
             z = input("press enter to continue.. otherwise it will exit")
             if z != "":
