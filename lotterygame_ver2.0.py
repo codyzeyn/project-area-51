@@ -4,7 +4,7 @@ print("< lottery game simulation !!! >")
 print("")
 a = input("are you ready? yes/no --> ").lower()
 if a == "yes":
-    print("the lucky winner number is between 1-50")
+    print("the lucky winner number is between 1-50, you must get the exact random number.")
     print("")
     input("press enter to start....")
     while True:
